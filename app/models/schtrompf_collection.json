@@ -1,0 +1,149 @@
+[{
+  "_id": {
+    "$oid": "5fbd03ed7bffc51e9c77f4ac"
+  },
+  "schtrompf": [
+    {
+      "$oid": "5fbd044c7bffc51e9c77f4ad"
+    }
+  ],
+  "age": 56,
+  "famille": "Magicien",
+  "race": "schtrompf",
+  "nourriture": "omnivore",
+  "login": "amine",
+  "password": "8yRfqE2DbQYcoOA5zO",
+  "createdAt": {
+    "$date": "2020-11-24T13:00:29.277Z"
+  },
+  "updatedAt": {
+    "$date": "2020-11-24T13:05:16.791Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fbd044c7bffc51e9c77f4ad"
+  },
+  "schtrompf": [],
+  "age": 3,
+  "famille": "test",
+  "race": "test",
+  "nourriture": "test",
+  "login": "test",
+  "password": "test",
+  "createdAt": {
+    "$date": "2020-11-24T13:02:04.400Z"
+  },
+  "updatedAt": {
+    "$date": "2020-11-24T13:02:04.400Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fbd1f70102e6004b886c0d2"
+  },
+  "schtrompf": [],
+  "age": 3,
+  "famille": "bi",
+  "race": "po",
+  "nourriture": "tout",
+  "login": "ltusseau",
+  "password": "jktDKgWaf711VGcLJj",
+  "createdAt": {
+    "$date": "2020-11-24T14:57:52.781Z"
+  },
+  "updatedAt": {
+    "$date": "2020-11-24T14:57:52.781Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fbd1f8f102e6004b886c0d3"
+  },
+  "schtrompf": [],
+  "age": 8,
+  "famille": "gourmand",
+  "race": "fort",
+  "nourriture": "tout",
+  "login": "dandre",
+  "password": "AbqGJ9Jcv4me1qGZmo",
+  "createdAt": {
+    "$date": "2020-11-24T14:58:23.862Z"
+  },
+  "updatedAt": {
+    "$date": "2020-11-24T14:58:23.862Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fbd1fd5102e6004b886c0d4"
+  },
+  "schtrompf": [],
+  "age": 29,
+  "famille": "Culture",
+  "race": "intello",
+  "nourriture": "champignon",
+  "login": "jdebelle",
+  "password": "AbqGJ9Jcv4me1qGZmo",
+  "createdAt": {
+    "$date": "2020-11-24T14:59:33.354Z"
+  },
+  "updatedAt": {
+    "$date": "2020-11-24T14:59:33.354Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fbd1fe8102e6004b886c0d5"
+  },
+  "schtrompf": [],
+  "age": 3,
+  "famille": "bi",
+  "race": "po",
+  "nourriture": "tout",
+  "login": "ltusseau",
+  "password": "jktDKgWaf711VGcLJj",
+  "createdAt": {
+    "$date": "2020-11-24T14:59:52.778Z"
+  },
+  "updatedAt": {
+    "$date": "2020-11-24T14:59:52.778Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fbd1ff1102e6004b886c0d6"
+  },
+  "schtrompf": [],
+  "age": 56,
+  "famille": "mechant",
+  "race": "humain",
+  "nourriture": "schtrompf",
+  "login": "gargamelle",
+  "password": "tqADyCnE8cnMJMVxO2",
+  "createdAt": {
+    "$date": "2020-11-24T15:00:01.490Z"
+  },
+  "updatedAt": {
+    "$date": "2020-11-24T15:00:01.490Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fbd2007102e6004b886c0d7"
+  },
+  "schtrompf": [],
+  "age": 8,
+  "famille": "gourmand",
+  "race": "fort",
+  "nourriture": "tout",
+  "login": "dandre",
+  "password": "AbqGJ9Jcv4me1qGZmo",
+  "createdAt": {
+    "$date": "2020-11-24T15:00:23.871Z"
+  },
+  "updatedAt": {
+    "$date": "2020-11-24T15:00:23.871Z"
+  },
+  "__v": 0
+}]
