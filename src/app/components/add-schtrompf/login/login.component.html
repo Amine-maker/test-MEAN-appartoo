@@ -1,0 +1,58 @@
+<div style="width: 400px; margin: auto;">
+    <div class="submit-form p-5 shadow">
+        <h2 class="mb-3">Inscription</h2>
+        
+        <p> {{message}} </p>
+      <form #form = "ngForm" (ngSubmit)="register(form)">
+        <div class="form-group">
+          <label for="login">login</label>
+          <input
+            type="text" class="form-control" id="login" required
+            [(ngModel)]= "schtrompf.login" name="login" #login="ngModel" ngModel
+          />
+        </div>
+
+
+        <div class="form-group">
+          <label for="password">mot de passe</label>
+          <input
+            type="password" class="form-control" id="password" required
+            [(ngModel)]= "schtrompf.password" minlength="4" name="password" #password="ngModel" ngModel/>
+        </div>
+
+        <div class="form-group">
+            <label for="age">age</label>
+            <input
+              type="number" class="form-control" id="age" required
+              [(ngModel)]= "schtrompf.age" name="age" #age="ngModel" ngModel
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="famille">famille</label>
+            <input
+              type="text" class="form-control" id="famille" required
+              [(ngModel)]= "schtrompf.famille" name="famille" #famille="ngModel" ngModel
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="race">race</label>
+            <input
+              type="text" class="form-control" id="race" required
+              [(ngModel)]= "schtrompf.race"  name="race" #race="ngModel"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="nourriture">Nourriture</label>
+            <input
+              type="text" class="form-control" id="nourriture" required
+              [(ngModel)]= "schtrompf.nourriture" name="nourriture" #nourriture="ngModel"
+            />
+          </div>
+        
+        <button type="submit" class="btn btn-block btn-success">S'inscrire</button>
+      </form>
+    </div>
+  </div>

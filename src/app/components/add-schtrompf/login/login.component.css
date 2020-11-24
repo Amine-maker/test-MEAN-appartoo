@@ -1,0 +1,10 @@
+input.ng-invalid{
+    border-color: rgb(255, 18, 18);
+}
+
+input.ng-valid{
+    border-color: rgb(43, 196, 43);
+}
+input.ng-untouched{
+    border-color:#ced4da;
+}

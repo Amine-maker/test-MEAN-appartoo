@@ -1,0 +1,26 @@
+<div style="width: 400px; margin: auto;">
+    <div class="submit-form p-5 shadow">
+        <h2 class="mb-3">Connexion</h2>
+        <p class="text-danger"> {{ message }}</p>
+      <div class="form-group ">
+          <label for="login">login</label>
+          <input
+            type="text" class="form-control" id="login" required
+            [(ngModel)]= "schtrompf.login" name="login"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="password">mot de passe</label>
+          <input
+            type="password" class="form-control" id="password" required
+            [(ngModel)]= "schtrompf.password" name="password"/>
+        </div>
+
+  
+        <button (click)="login()" class="btn btn-block btn-success">Login</button>
+      <div class="m-3 float-left">Pas encore inscrit ?</div>
+      <div class="m-3 float-right"><a routerLink="/register">S'inscrire</a> </div>
+
+    </div>
+  </div>

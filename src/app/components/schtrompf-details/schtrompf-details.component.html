@@ -1,0 +1,87 @@
+<div class="row">
+    <div class="col-6" *ngIf="currentSchtrompf"> 
+      <button (click)="logout()" class="btn btn-primary">Déconnexion</button>
+      <div *ngIf="currentSchtrompf">
+      <h4>Mes Schtrompf's Information</h4>
+     
+        <form>
+          <div class="form-group">
+            <label for="age">Age</label>
+            <input type="number" class="form-control" id="age"
+              [(ngModel)]="currentSchtrompf.age" name="age"/>
+          </div>
+
+          <div class="form-group">
+              <label for="famille">Famille</label>
+              <input type="text" class="form-control" id="famille"
+                [(ngModel)]="currentSchtrompf.famille" name="famille"/>
+            </div>
+    
+            <div class="form-group">
+              <label for="race">Race</label>
+              <input type="text" class="form-control" id="race"
+                [(ngModel)]="currentSchtrompf.race" name="race"/>
+            </div>
+
+            <div class="form-group">
+              <label for="nourriture">Nourriture</label>
+              <input type="text" class="form-control" id="nourriture"
+                [(ngModel)]="currentSchtrompf.nourriture" name="nourriture"/>
+            </div>
+         <button
+        type="submit"
+        class="btn btn-success"
+        (click)="updateSchtrompf()"
+      >
+        Modifier
+      </button>
+        </form>
+      <p>{{ message }}</p>
+    </div>
+  </div>
+  <div class="col-6">
+    <h4>Mes amis</h4>
+
+
+  <form class="form-inline">
+    <div class="form-group">
+      <select class="custom-select form-control" [(ngModel)]="idAmi" name="idAmi" id="idAmi">
+        <option *ngFor="let schtrompf of schtrompfList; let i = index"  value="{{ schtrompf._id }}">
+           age : {{ schtrompf.age }}
+           famille :  {{ schtrompf.famille }}
+        </option>
+      </select>
+      
+    </div>
+    <button class="btn btn-primary" (click)="addOneSchtrompfTo()" type="submit">Ajouter à ma liste d'ami</button>
+  </form>
+ 
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">Age</th>
+          <th scope="col">Famille</th>
+          <th scope="col">Race</th>
+          <th scope="col">Nourritre</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead> 
+
+        <tr class="table-secondary" *ngFor="let schtrompf of friendList; let i = index">
+          
+          <th>{{schtrompf.age}}</th>
+          <td>{{schtrompf.age}}</td>
+          <td>{{schtrompf.famille}}</td>
+          <td>{{schtrompf.nourriture}}</td>
+          
+          <td>
+        <button (click)="removeOneSchtrompfFrom(schtrompf._id)" type="submit" class="btn btn-danger">Supprimer de ma liste</button>     
+          </td>
+        </tr>
+    </table>    
+  </div>
+    <div *ngIf="!currentSchtrompf">
+      <br />
+      <p>erreur lors du chargement du Schtrompf...</p>
+    </div>
+  </div>
